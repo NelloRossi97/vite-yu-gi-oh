@@ -1,0 +1,6 @@
+@use './partials/colors' as *;
+@import 'bootstrap/scss/bootstrap.scss';
+
+main{
+    background-color: $my-bg;
+}
