@@ -26,6 +26,7 @@ import MainComponent from './components/MainComponent.vue'
         const url = cards.baseUrl + cards.endpoint;
         axios.get(url).then((res) => {
           console.log(res.data.data);
+          cards.cardsList = res.data.data;
         });
       }
     },

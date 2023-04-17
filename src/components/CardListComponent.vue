@@ -4,9 +4,8 @@
             Found n cards
         </div>
         <div class="row">
-            <CardComponent />
+            <CardComponent v-for="card in cards.cardsList" :card="card"/>
         </div>
-        <button @click="prova">ciao</button>
     </div>
 </template>
 
@@ -24,9 +23,6 @@ import CardComponent from './CardComponent.vue';
             }
         },
         methods:{
-            prova(){
-                console.log(cards.cardsList)
-            }
         }
     }
 </script>
