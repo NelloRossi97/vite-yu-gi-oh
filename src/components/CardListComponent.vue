@@ -4,17 +4,29 @@
             Found n cards
         </div>
         <div class="row">
-            <CardComponent/>
+            <CardComponent />
         </div>
+        <button @click="prova">ciao</button>
     </div>
 </template>
 
 <script>
+import{cards} from '../data/cards'
 import CardComponent from './CardComponent.vue';
     export default {
         name: 'CardListComponent',
         components:{
             CardComponent
+        },
+        data(){
+            return{
+                cards
+            }
+        },
+        methods:{
+            prova(){
+                console.log(cards.cardsList)
+            }
         }
     }
 </script>
