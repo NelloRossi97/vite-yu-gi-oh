@@ -1,12 +1,21 @@
 <template>
-  
+    <HeaderComponent/>
+    <main>
+      <MainComponent/>
+    </main>
 </template>
 
 <script>
 import axios from 'axios';
 import{cards} from './data/cards';
+import HeaderComponent from './components/HeaderComponent.vue';
+import MainComponent from './components/MainComponent.vue'
   export default {
     name:'App',
+    components:{
+      HeaderComponent,
+      MainComponent
+    },
     data(){
       return{
         cards

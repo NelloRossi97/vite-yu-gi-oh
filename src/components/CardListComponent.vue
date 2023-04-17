@@ -1,0 +1,31 @@
+<template>
+    <div class="my-container mt-3 p-4">
+        <div class="found-cards p-3 mb-3">
+            Found n cards
+        </div>
+        <div class="row">
+            <CardComponent/>
+        </div>
+    </div>
+</template>
+
+<script>
+import CardComponent from './CardComponent.vue';
+    export default {
+        name: 'CardListComponent',
+        components:{
+            CardComponent
+        }
+    }
+</script>
+
+<style lang="scss" scoped>
+@use '../assets/styles/partials/colors' as *;
+.my-container{
+    background-color: white;
+}
+.found-cards{
+    background-color: $my-dark-bg;
+    color: white;
+}
+</style>
