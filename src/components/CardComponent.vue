@@ -2,8 +2,8 @@
     <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
         <div class="my-card text-center mb-5">
             <img :src="card.card_images[0].image_url" :alt="card.name">
-            <h4 class="text-uppercase mt-2">{{ card.name }}</h4>
-            <div class="font-[0]weight-bold mb-2">{{ card.archetype }}</div>
+            <h4 class="text-uppercase mt-4 text-white">{{ card.name }}</h4>
+            <div class="fw-bold mb-2">{{ card.archetype }}</div>
         </div>
     </div>
 </template>
