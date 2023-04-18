@@ -27,8 +27,9 @@ import MainComponent from './components/MainComponent.vue'
         axios.get(url).then((res) => {
           console.log(res.data.data);
           cards.cardsList = res.data.data;
-        });
-      }
+        })
+      },
+      
     },
     mounted(){
       cards.endpoint = 'cardinfo.php?num=50&offset=0';
